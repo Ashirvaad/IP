@@ -1,0 +1,12 @@
+clc;
+clear all;
+close all;
+img = imread('flower.jpg');
+imgg = rgb2gray(img);
+imgn = 255 - double(imgg);
+subplot(1,2,1);
+imshow(imgg);
+title('Original Image');
+subplot(1,2,2);
+imshow(uint8(imgn));
+title('Output Image');
